@@ -3,7 +3,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 from scipy.stats import chi2_contingency
 
-from musclehub_project.codecademySQL import sql_query
+from database.codecademySQL import sql_query
 
 pd.set_option('display.max_columns', None)
 pd.set_option('display.expand_frame_repr', False)
@@ -97,11 +97,9 @@ ax3.set_xticklabels(["Group A", "Group B"])
 ax3.set_ylabel("Percent")
 ax3.set_title("Percent of visitors who purchase a membership")
 
-plt.show()
 
 
 if __name__ == "__main__":
     print(app_pivot)
     print(member_pivot)
     print(final_member_pivot)
-    print(df)
